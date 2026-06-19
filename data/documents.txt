@@ -1,0 +1,41 @@
+LangChain is a framework for developing applications powered by language models. It provides modular components that can be chained together to build complex applications.
+
+LCEL stands for LangChain Expression Language. It uses the pipe operator to chain components together, allowing prompts, models, and parsers to be composed declaratively.
+
+Prompt templates in LangChain allow you to create reusable prompt structures with variable placeholders that get filled in at runtime.
+
+Output parsers convert raw LLM text output into structured formats like JSON or Pydantic objects, making it easier to use the response programmatically.
+
+Retrievers in LangChain are components that fetch relevant documents from a data source given a query, typically backed by a vector database.
+
+Document loaders are used to load data from various sources like PDFs, websites, or databases into a standard document format for processing.
+
+Text splitters break large documents into smaller chunks before embedding, since LLMs and embedding models have context length limits.
+
+Memory in LangChain allows conversational applications to remember previous interactions across multiple turns of a conversation.
+
+Agents in LangChain can decide which tools to use and in what order, based on reasoning about the user's request, rather than following a fixed sequence.
+
+Tool calling allows a language model to invoke external functions, like searching the web or querying a database, to gather information it needs.
+
+LangGraph is a library for building stateful, multi-step applications with language models, represented as a graph of nodes and edges.
+
+A StateGraph in LangGraph defines the state schema that gets passed between nodes, and each node can read and update parts of that state.
+
+Nodes in LangGraph represent individual steps or agents in a workflow, such as a retrieval step, a reasoning step, or a tool-calling step.
+
+Edges in LangGraph define how control flows between nodes, and can be conditional, routing to different nodes based on the current state.
+
+Cycles in LangGraph allow a workflow to loop back to a previous node, which is essential for implementing self-correction or reflection patterns.
+
+A supervisor agent in a multi-agent LangGraph system is responsible for deciding which specialist agent should handle a given task.
+
+Checkpointing in LangGraph saves the state of a workflow at each step, allowing it to be resumed later or recovered after a failure.
+
+Streaming in LangGraph allows intermediate steps of a workflow to be sent to the user in real time, rather than waiting for the entire process to finish.
+
+Human-in-the-loop patterns in LangGraph allow a workflow to pause and wait for human approval before continuing to the next step.
+
+RAG, or Retrieval-Augmented Generation, combines a retrieval step with a generation step so that an LLM can answer questions using external knowledge it was not trained on.
+
+Reranking is a technique where an initial set of retrieved documents is re-scored using a more accurate but slower model to improve the final ranking quality.
